@@ -83,6 +83,14 @@
 		3BA8DD0D1C616732005DC1A4 /* QueueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA8DD0B1C616732005DC1A4 /* QueueProvider.swift */; };
 		3BA8DD0E1C616732005DC1A4 /* QueueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA8DD0B1C616732005DC1A4 /* QueueProvider.swift */; };
 		3BA8DD0F1C616732005DC1A4 /* QueueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA8DD0B1C616732005DC1A4 /* QueueProvider.swift */; };
+		4A25CBB41CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */; };
+		4A25CBB51CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */; };
+		4A25CBB61CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */; };
+		4A25CBB71CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */; };
+		4A25CBB91CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */; };
+		4A25CBBA1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */; };
+		4A25CBBB1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */; };
+		4A25CBBC1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +166,8 @@
 		3B78C6B81BA762FD00173EAC /* CleanroomDataTransactionsUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanroomDataTransactionsUnitTests.swift; sourceTree = "<group>"; };
 		3B78C6CE1BA7634E00173EAC /* CleanroomDataTransactions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanroomDataTransactions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA8DD0B1C616732005DC1A4 /* QueueProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueProvider.swift; sourceTree = "<group>"; };
+		4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncoder.swift; sourceTree = "<group>"; };
+		4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDictionaryExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +315,7 @@
 		3B4E1CD51C5AAFD000C4A7F3 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				4A25CBB81CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift */,
 				3B3346F31C5C035A00A11BFB /* JSONOptionalTransaction.swift */,
 				3B4E1CB91C5A7E9900C4A7F3 /* JSONPayloadProcessing.swift */,
 				3B1C813E1C59D67F006248E4 /* JSONTransaction.swift */,
@@ -324,6 +335,7 @@
 		3B4E1CE71C5ABBE500C4A7F3 /* ApiDoc */ = {
 			isa = PBXGroup;
 			children = (
+				4A25CBB31CF3A99C00F02CF8 /* JSONEncoder.swift */,
 				3B3346FB1C5C044F00A11BFB /* ApiDocOptionalTransaction.swift */,
 				3B4E1CE21C5ABBE300C4A7F3 /* ApiDocTransaction.swift */,
 			);
@@ -623,9 +635,11 @@
 			files = (
 				3B3346F41C5C035A00A11BFB /* JSONOptionalTransaction.swift in Sources */,
 				3B4E1CD81C5AB1C700C4A7F3 /* FetchImageTransaction.swift in Sources */,
+				4A25CBB91CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */,
 				3B4E1CC51C5A7F1200C4A7F3 /* HTTPStatusCodeHandling.swift in Sources */,
 				3B1C81631C59D67F006248E4 /* HTTPResponseMetadata.swift in Sources */,
 				3B4E1CD01C5AAD3500C4A7F3 /* WrappingDataTransaction.swift in Sources */,
+				4A25CBB41CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */,
 				3B4E1CCB1C5A909500C4A7F3 /* GenericDataProcessingTransaction.swift in Sources */,
 				3B6FB1181C616D1C001F50BF /* QueueAsyncFunctionExtension.swift in Sources */,
 				3B1C818B1C59D67F006248E4 /* URLTransaction.swift in Sources */,
@@ -656,9 +670,11 @@
 			files = (
 				3B3346F51C5C035A00A11BFB /* JSONOptionalTransaction.swift in Sources */,
 				3B4E1CD91C5AB1C700C4A7F3 /* FetchImageTransaction.swift in Sources */,
+				4A25CBBA1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */,
 				3B4E1CC61C5A7F1200C4A7F3 /* HTTPStatusCodeHandling.swift in Sources */,
 				3B1C81641C59D67F006248E4 /* HTTPResponseMetadata.swift in Sources */,
 				3B4E1CD11C5AAD3500C4A7F3 /* WrappingDataTransaction.swift in Sources */,
+				4A25CBB51CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */,
 				3B4E1CCC1C5A909500C4A7F3 /* GenericDataProcessingTransaction.swift in Sources */,
 				3B6FB1191C616D1C001F50BF /* QueueAsyncFunctionExtension.swift in Sources */,
 				3B1C818C1C59D67F006248E4 /* URLTransaction.swift in Sources */,
@@ -689,9 +705,11 @@
 			files = (
 				3B3346F61C5C035A00A11BFB /* JSONOptionalTransaction.swift in Sources */,
 				3B4E1CDA1C5AB1C700C4A7F3 /* FetchImageTransaction.swift in Sources */,
+				4A25CBBB1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */,
 				3B4E1CC71C5A7F1200C4A7F3 /* HTTPStatusCodeHandling.swift in Sources */,
 				3B1C81651C59D67F006248E4 /* HTTPResponseMetadata.swift in Sources */,
 				3B4E1CD21C5AAD3500C4A7F3 /* WrappingDataTransaction.swift in Sources */,
+				4A25CBB61CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */,
 				3B4E1CCD1C5A909500C4A7F3 /* GenericDataProcessingTransaction.swift in Sources */,
 				3B6FB11A1C616D1C001F50BF /* QueueAsyncFunctionExtension.swift in Sources */,
 				3B1C818D1C59D67F006248E4 /* URLTransaction.swift in Sources */,
@@ -732,8 +750,10 @@
 				3B1C818E1C59D67F006248E4 /* URLTransaction.swift in Sources */,
 				3B3346F71C5C035A00A11BFB /* JSONOptionalTransaction.swift in Sources */,
 				3B1C815E1C59D67F006248E4 /* DataTransaction.swift in Sources */,
+				4A25CBBC1CF3A9BA00F02CF8 /* NSDictionaryExtensions.swift in Sources */,
 				3B1C816E1C59D67F006248E4 /* JSONTransaction.swift in Sources */,
 				3B4E1CBD1C5A7E9900C4A7F3 /* JSONPayloadProcessing.swift in Sources */,
+				4A25CBB71CF3A99C00F02CF8 /* JSONEncoder.swift in Sources */,
 				3B4E1CA61C59E24F00C4A7F3 /* HTTPResponseStatus.swift in Sources */,
 				3B1C81621C59D67F006248E4 /* DataTransactionError.swift in Sources */,
 			);
