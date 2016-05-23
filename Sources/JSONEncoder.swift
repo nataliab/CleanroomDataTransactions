@@ -18,7 +18,7 @@ public protocol BinaryDataModel {
 }
 
 public extension BinaryDataModel where Self : JSONDataModel {
-    internal func toBinaryData () -> BinaryEncoderResult<NSData> {
+    public func toBinaryData () -> BinaryEncoderResult<NSData> {
 
         switch self.toJSON() {
         case .Succeeded(let json):
