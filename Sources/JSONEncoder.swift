@@ -13,11 +13,11 @@ public enum ApidocJSONEncoderResult<T> {
     case Failed(ErrorType)
 }
 
-internal protocol BinaryDataModel {
+public protocol BinaryDataModel {
     func toBinaryData () -> BinaryEncoderResult<NSData>
 }
 
-extension BinaryDataModel where Self : JSONDataModel {
+public extension BinaryDataModel where Self : JSONDataModel {
     internal func toBinaryData () -> BinaryEncoderResult<NSData> {
 
         switch self.toJSON() {
@@ -38,20 +38,20 @@ extension BinaryDataModel where Self : JSONDataModel {
     }
 }
 
-internal enum BinaryEncoderResult<T> {
+public enum BinaryEncoderResult<T> {
     case Succeeded(T)
     case Failed(ErrorType)
 }
 
-internal enum EncoderErrorType: ErrorType {
+public enum EncoderErrorType: ErrorType {
     case InvalidJson
 }
 
-internal protocol JSONDataModel {
+public protocol JSONDataModel {
     func toJSON () -> ApidocJSONEncoderResult<AnyObject>
 }
 
-extension Array where Element:JSONDataModel {
+public extension Array where Element:JSONDataModel {
     func toJSON () -> ApidocJSONEncoderResult<[AnyObject]> {
         var result = [AnyObject]()
         for model in self {
@@ -65,7 +65,7 @@ extension Array where Element:JSONDataModel {
         return .Succeeded(result)
     }
 }
-extension Array where Element:JSONDataModel {
+public extension Array where Element:JSONDataModel {
     func toBinaryData () -> BinaryEncoderResult<NSData>
     {
         switch self.toJSON() {
@@ -86,7 +86,7 @@ extension Array where Element:JSONDataModel {
     }
 }
 
-extension String {
+public extension String {
     func toBinaryData () -> BinaryEncoderResult<NSData>
     {
         if let data = ("\"" + self + "\"").dataUsingEncoding(NSUTF8StringEncoding) {

@@ -8,9 +8,9 @@
 
 import Foundation
 
-extension NSDictionary
+public extension NSDictionary
 {
-    internal func required(key: String)
+    public func required(key: String)
         throws
         -> Any
     {
@@ -20,7 +20,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredGUID(key: String)
+    public func requiredGUID(key: String)
         throws
         -> NSUUID
     {
@@ -32,7 +32,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredBool(key: String)
+    public func requiredBool(key: String)
         throws
         -> Bool
     {
@@ -47,7 +47,7 @@ extension NSDictionary
         throw DataTransactionError.DataFormatError("Expected to find key named \"\(key)\" containing a numberis, string, or boolean Bool value")
     }
 
-    internal func optionalBool(key: String)
+    public func optionalBool(key: String)
         -> Bool?
     {
         if let boolStr = self[key] as? String {
@@ -60,7 +60,7 @@ extension NSDictionary
         return nil
     }
 
-    internal func requiredInt(key: String)
+    public func requiredInt(key: String)
         throws
         -> Int
     {
@@ -70,7 +70,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredDouble(key: String)
+    public func requiredDouble(key: String)
         throws
         -> Double
     {
@@ -80,7 +80,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredArray(key: String)
+    public func requiredArray(key: String)
         throws
         -> NSArray
     {
@@ -90,7 +90,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredArrayWithType<T, A: AnyObject>(key: String, transform: (A) throws -> T)
+    public func requiredArrayWithType<T, A: AnyObject>(key: String, transform: (A) throws -> T)
         throws
         -> [T]
     {
@@ -104,7 +104,7 @@ extension NSDictionary
         return resultArray
     }
 
-    internal func requiredArrayWithType<T, A: AnyObject>(key: String, optionalTransform: (A) -> T?)
+    public func requiredArrayWithType<T, A: AnyObject>(key: String, optionalTransform: (A) -> T?)
         throws
         -> [T]
     {
@@ -115,7 +115,7 @@ extension NSDictionary
         }
     }
 
-    internal func optionalArrayWithType<T, A: AnyObject>(key: String, transform: (A) throws -> T)
+    public func optionalArrayWithType<T, A: AnyObject>(key: String, transform: (A) throws -> T)
         throws
         -> [T]?
     {
@@ -133,7 +133,7 @@ extension NSDictionary
         return nil
     }
 
-    internal func optionalArrayWithType<T, A: AnyObject>(key: String, optionalTransform: (A) -> T?)
+    public func optionalArrayWithType<T, A: AnyObject>(key: String, optionalTransform: (A) -> T?)
         -> [T]?
     {
         let extractedArray = self[key] as? [A]
@@ -143,7 +143,7 @@ extension NSDictionary
         }
     }
 
-    internal func requiredStringArray(key: String)
+    public func requiredStringArray(key: String)
         throws
         -> [String]
     {
@@ -161,7 +161,7 @@ extension NSDictionary
         return strings
     }
     
-    internal func requiredDictionary(key: String)
+    public func requiredDictionary(key: String)
         throws
         -> NSDictionary
     {
@@ -171,7 +171,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredString(key: String)
+    public func requiredString(key: String)
         throws
         -> String
     {
@@ -181,7 +181,7 @@ extension NSDictionary
         return val
     }
 
-    internal func requiredURL(key: String)
+    public func requiredURL(key: String)
         throws
         -> NSURL
     {
